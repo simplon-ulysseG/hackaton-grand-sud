@@ -53,25 +53,25 @@ nav {
 }
 
 #acc1 .titreAcc{
+  background-image: url("../img/actus3.jpg");
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/actus.jpg");
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
 }
 
 #acc2 .titreAcc{
-  background-color: red;
+  background-image: url("../img/referencement.jpg");
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   animation-delay: .3s;
 }
 
