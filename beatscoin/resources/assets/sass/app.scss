@@ -1,0 +1,8 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '../components/semantic-ui-sass/app/assets/stylesheets/semantic-ui/globals/all';
+@import '../components/semantic-ui-sass/app/assets/stylesheets/semantic-ui/elements/all';
+@import '../components/semantic-ui-sass/app/assets/stylesheets/semantic-ui/collections/all';
+@import '../components/semantic-ui-sass/app/assets/stylesheets/semantic-ui/views/all';
+@import '../components/semantic-ui-sass/app/assets/stylesheets/semantic-ui/modules/all';
+
+@import 'module/home';
