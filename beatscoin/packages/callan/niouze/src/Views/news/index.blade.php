@@ -10,13 +10,13 @@
 			<thead>
 				<th class="five wide left aligned">News</th>
 				<th class="three wide center aligned">Date</th>
-				<th class="one wide right aligned">Edit</th>
+				<th class="one wide center aligned">Edit</th>
 			</thead>
 			@foreach($news as $n)
 			<tr>
 				<td class="left aligned"><a href="#"> {{$n->title}} </a></td>
 				<td class="center aligned">{{$n->date}}</td>
-				<td class="right aligned"><a href="/actus/edit/{{$n->id}}" class="ui inverted icon blue button"><i class="edit icon"></i></a></td>
+				<td class="center aligned"><a href="/actus/edit/{{$n->id}}" class="ui inverted icon blue button"><i class="edit icon"></i></a></td>
 			</tr>
 			@endforeach
 		</table>

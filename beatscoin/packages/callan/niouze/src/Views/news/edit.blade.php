@@ -3,7 +3,7 @@
 @section('content')
 <div class="ui centered grid container">
 	<div class="eight wide left aligned column">
-		<form method="post" class="ui form" action="/actus/create">
+		<form method="post" class="ui form" action="/actus/edit">
 			{{csrf_field()}}
 			{{method_field('PUT')}}
 			<input type="hidden" name="id" value="{{$edit->id}}">
@@ -20,11 +20,11 @@
 			<div class="fields">
 				<div class="ten wide field">
 					<label>Date</label>
-					<input type="date" name="date" value="{{$edit->date}}">
+					<input type="date" name="date" value="{{$edit->date->format('Y-m-d')}}">
 				</div>
 				<div class="ten wide field">
 					<label>heure</label>
-					<input type="time" name="hour" value="{{$edit->hour}}">
+					<input type="time" name="hour" value="{{$edit->date->format('H:i')}}">
 				</div>
 			</div>
 			<div class="field">
