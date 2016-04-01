@@ -1,0 +1,34 @@
+html{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+body{
+  margin: 0;
+  background-color: #343434;
+}
+
+.Actu1{
+border:2px white solid;
+border-radius: 2rem;
+  width: 60%;
+  margin: 2.5% 20% 1.25% 20%;
+  color: white;
+  font-size: 2vw;
+background-color: #585656;
+}
+
+.Actu1 p{
+  margin-left: 30%;
+  opacity: .7;
+
+}
+
+.FlyDiv img{
+  width: 22.5%;
+  height: 27.5%;
+  background-size: cover;
+  float: left;
+  margin: 4.5% 10% 4.5% 5%;
+}
