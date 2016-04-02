@@ -2,13 +2,14 @@ $( document ).ready(function() {
 
 $('.bio').hide();
 $('.Artistes1').on('click', function() {
-  if ($('.bio').is(':visible')) {
-    $('.bio').hide();
-    $('.description').html('Description: Cliquez pour en savoir plus !');
+  var id = this.id;
+  if ($('#'+id+' .bio').is(':visible')) {
+    $('#'+id+' .bio').hide();
+    $('#'+id+' .description').html('Description: Cliquez pour en savoir plus !');
   }
   else {
-    $('.bio').show();
-    $('.description').html('Description:');
+    $('#'+id+' .bio').show();
+    $('#'+id+' .description').html('Description:');
 
   }
 })
