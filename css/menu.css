@@ -101,6 +101,7 @@ font-family: 'Lily Script One', cursive;
 
 .titreMenu {
   font-size: 3vw;
+  cursor: pointer;
 
 }
 
@@ -269,6 +270,10 @@ input{
 }
 
 @media (max-width: 600px) {
+    nav {
+      height: 7%;
+    }
+
     .accordeon {
       display: flex;
       flex-direction: column;
@@ -280,5 +285,9 @@ input{
 
     body {
       overflow-y: scroll;
+    }
+
+    #logo{
+      font-size: 4vw;
     }
   }
