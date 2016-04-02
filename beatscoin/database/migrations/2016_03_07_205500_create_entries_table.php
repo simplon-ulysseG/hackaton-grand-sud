@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateEntriesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('niouze_entries', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id');
+            $table->string('title');
+            $table->string('category');
+            $table->string('slug', 255)->unique();
+            $table->string('date');
+            $table->string('lieux');
+            $table->string('content')->nullable();
+            $table->string('price')->nullable();
+            $table->text('excerpt')->nullable();
+            $table->timestamp('published_at');
+            $table->softDeletes();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('niouze_entries');
+    }
+}
