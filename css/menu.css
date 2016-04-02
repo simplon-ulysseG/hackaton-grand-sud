@@ -1,11 +1,3 @@
-@font-face {
-font-family: master_of_break;
-src: url('../font/master_of_break.otf'),
-src: url('../font/master_of_break.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-
 html {
   height: 100%;
   width: 100%;
@@ -54,8 +46,7 @@ nav img {
 .acc {
   border: 1px solid black;
   width: 100%;
-  height: 100%;
-  /*font-size: 7vw;*/
+  height: 85%;
   transition: all .5s ease-in;
   overflow: hidden;
   position: relative;
@@ -121,17 +112,18 @@ nav img {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   /*overflow-y: scroll;*/
 }
 
 .contenu {
   /*margin: 10% 30%;*/
   width: 100%;
-  /*height: 100%;*/
+  height:95%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
   font-family: 'Century Gothic';
   padding-top: 2%;
   overflow-y: scroll;
@@ -140,8 +132,8 @@ nav img {
 
 /*ACTUALITE*/
 .Actu1{
-  border:2px white solid;
-  border-radius: 2rem;
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
   width: 60%;
   margin: 2.5% 20% 1.25% 20%;
   color: white;
@@ -170,6 +162,21 @@ nav img {
   margin-top: -2.5%;
 }
 /*FIN ACTUALITE*/
+
+
+.footer {
+  margin-top: 5%;
+  width: 100%;
+  /*height: 10%;*/
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2% 0%;
+  color: white;
+  opacity: .5;
+  letter-spacing: 3px;
+}
 
 @media (max-width: 600px) {
     .accordeon {
