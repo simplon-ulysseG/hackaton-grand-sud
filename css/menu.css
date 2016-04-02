@@ -277,4 +277,8 @@ input{
     .titreMenu {
       font-size: 6vw;
     }
+
+    body {
+      overflow-y: scroll;
+    }
   }
