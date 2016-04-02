@@ -26,6 +26,10 @@
 					<label>heure</label>
 					<input type="time" name="hour" value="{{$edit->date->format('H:i')}}">
 				</div>
+				<div class="ten wide field">
+					<label>Lieux</label>
+					<input type="text" name="lieux" value="{{$edit->lieux}}">
+				</div>
 			</div>
 			<div class="field">
 				<label>Description</label>

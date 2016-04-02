@@ -24,6 +24,10 @@
 					<label>heure</label>
 					<input type="time" name="hour" value="21:00">
 				</div>
+				<div class="ten wide field">
+					<label>Lieux</label>
+					<input type="text" name="lieux">
+				</div>
 			</div>
 			<div class="field">
 				<label>Description</label>
